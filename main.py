@@ -7,6 +7,8 @@ Nizovtseva Anastasia
 
 import turtle as t
 
+def any():
+    pass
 
 def background():
     t.pu()
