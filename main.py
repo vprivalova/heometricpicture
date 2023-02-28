@@ -4,14 +4,16 @@ Khludina Ksenia
 Nizovtseva Anastasia
 
 """
-<<<<<<< HEAD
 
 import turtle as t
 
-def any():
-    pass
 
 def background():
+    """
+    TODO: Vika
+    Function is limiting background and colouring it.
+    :return:
+    """
     t.pu()
     t.goto(-500, 400)
     t.pd()
@@ -26,21 +28,32 @@ def background():
 
 background()
 
-def dfgh ():
+
+def triangle():
+    """
+    TODO: Ksenia
+    Function is drawing a triangle.
+    :return:
+    """
     pass
-=======
-import turtle as t
-t.pendown()
-t. speed(0)
-t.pensize(2)
-t.color('pink')
-for i in range(250):
-    for colours in ['red', 'blue']:
-        t.color(colours)
-        t.forward(2*i)
-        t.left(150)
-t.forward(500)
-t.exitonclick()
 
 
->>>>>>> a5ae3cf (Initial commit)
+def star():
+    """
+    TODO: Nastya
+    Function is drawing a star.
+    :return:
+    """
+    t.pendown()
+    t. speed(0)
+    t.pensize(2)
+    t.color('pink')
+    for i in range(250):
+        for colours in ['red', 'blue']:
+            t.color(colours)
+            t.forward(2*i)
+            t.left(150)
+    t.forward(500)
+    t.exitonclick()
+
+
