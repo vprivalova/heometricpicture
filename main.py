@@ -4,6 +4,7 @@ Khludina Ksenia
 Nizovtseva Anastasia
 
 """
+<<<<<<< HEAD
 
 import turtle as t
 
@@ -27,3 +28,19 @@ background()
 
 def dfgh ():
     pass
+=======
+import turtle as t
+t.pendown()
+t. speed(0)
+t.pensize(2)
+t.color('pink')
+for i in range(250):
+    for colours in ['red', 'blue']:
+        t.color(colours)
+        t.forward(2*i)
+        t.left(150)
+t.forward(500)
+t.exitonclick()
+
+
+>>>>>>> a5ae3cf (Initial commit)
