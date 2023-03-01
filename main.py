@@ -26,6 +26,7 @@ def background():
     t.fd(800)
     t.done()
 
+
 background()
 
 
@@ -55,5 +56,34 @@ def star():
             t.left(150)
     t.forward(500)
     t.exitonclick()
+
+
+def circle():
+    """
+    TODO:
+    Function is drawing a circle.
+    :return:
+    """
+    pass
+
+
+def square():
+    """
+    TODO:
+    Function is drawing a square.
+    :return:
+    """
+    pass
+
+
+def rectangle():
+    """
+    TODO:
+    Function is drawing rectangle.
+    :return:
+    """
+    pass
+
+
 
 
