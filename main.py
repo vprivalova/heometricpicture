@@ -15,6 +15,8 @@ def background():
     :return:
     """
     t.pu()
+    t.fillcolor('#191970')
+    t.begin_fill()
     t.goto(-500, 400)
     t.pd()
     t.fd(1000)
@@ -24,6 +26,10 @@ def background():
     t.fd(1000)
     t.rt(90)
     t.fd(800)
+    t.end_fill()
+    t.pu()
+    t.goto(0, 0)
+    t.rt(90)
     t.done()
 
 
