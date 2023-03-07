@@ -75,7 +75,6 @@ def star(x, y, fillcolour, pensize, pencolour):
     :param pencolour: colour of the contour
     :return:
     """
-    import turtle as t
 
     t.goto(x, y)
     t.pd()
@@ -125,9 +124,8 @@ def square(x, y, a, fillcolour, pensize, pencolour):
     :param pencolour: colour of the contour
     :return:
     """
-    import turtle
 
-    square = turtle.Turtle()
+    square = t.Turtle()
     square.shape("turtle")
     for i in range(4):
         square.forward(100)
