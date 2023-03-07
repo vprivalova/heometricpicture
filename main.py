@@ -47,7 +47,7 @@ def triangle(x, y, a, fillcolour, pensize, pencolor):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(8)
+    t.speed(2)
     t.pensize(pensize)
     t.fillcolor(fillcolour)
     t.begin_fill()
@@ -84,6 +84,7 @@ def star(x, y, fillcolour, pensize, pencolour):
             t.fd(2 * i)
             t.lt(150)
     t.fd(5)
+    t.setheading(0)
     t.pu()
 
 
@@ -101,13 +102,14 @@ def circle(x, y, radius, fillcolour, pensize, pencolour):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(8)
+    t.speed(2)
     t.fillcolor(fillcolour)
     t.pencolor(pencolour)
     t.begin_fill()
     t.pensize(pensize)
     t.circle(radius)
     t.end_fill()
+    t.setheading(0)
     t.pu()
 
 
@@ -124,6 +126,7 @@ def square(x, y, a, fillcolour, pensize, pencolour):
     :return:
     """
     t.speed(8)
+    t.goto(x, y)
     t.pd()
     t.fillcolor(fillcolour)
     t.pencolor(pencolour)
@@ -162,11 +165,12 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
         t.fd(b)
         t.lt(90)
     t.end_fill()
-    t.done()
+    t.setheading(0)
 
 
 background()
 triangle(0, 0, 40, 'yellow', 3, 'blue')
-circle(-10, 0, 10, 'red', 3, 'green')
-square(-20, 0, 10, 'yellow', 3, 'blue')
+circle(50, 50, 20, 'red', 3, 'green')
+square(-200, 90, 50, 'yellow', 3, 'blue')
 star(40, 40, 'black', 3, 'yellow')
+rectangle(-60, 60, 70, 30, "green", 3, 'black')
