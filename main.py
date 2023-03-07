@@ -187,6 +187,14 @@ t.pd()
 t.pencolor('white')
 t.fd(800)
 #тут область насти
+t.pu()
+t.goto(200,-400)
+t.setheading(90)
+t.pd()
+t.pencolor('white')
+t.fd(800)
+t.pu()
+#тут область ксюши
 t.mainloop()
 
 
