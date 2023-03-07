@@ -36,21 +36,31 @@ def background():
 background()
 
 
-def triangle(x, y, a, c, angle1, fillcolour, pensize, pencolor):
+def triangle(x, y, a, fillcolour, pensize, pencolor):
     """
     TODO: Ksenia
     Function is drawing an isosceles triangle. #равнобедренный треугольник
     :param x: first coordinate of the start of drawing triangle
     :param y: last coordinate of the start of drawing triangle
     :param a: lenght of the side of the triangle, other side (b) is equal
-    :param c: length of the base of the triangle
-    :param angle1: an angle between sides a and b. other two angles (angle2, angle3) are same and equal = (180-angle1)/2 #угол между равными сторонами
     :param fillcolour: triangle fill colour #цвет заливки треугольника
     :param pensize: contour width
     :param pencolor: colour of the contour
     :return:
     """
-    pass
+    t.goto(x, y)
+    t.pd()
+    t.speed(2)
+    t.pensize(pensize)
+    t.fillcolor(fillcolour)
+    t.begin_fill()
+    t.fd(a)
+    t.lt(120)
+    t.fd(a)
+    t.lt(120)
+    t.fd(a)
+    t.end_fill()
+    t.done()
 
 
 def star(x, y, a, fillcolour, pensize, pencolour):
