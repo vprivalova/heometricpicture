@@ -60,7 +60,7 @@ def triangle(x, y, a, fillcolour, pensize, pencolor):
     t.pu()
 
 
-def star(x, y, fillcolour, pensize, pencolour):
+def star(x, y, a, fillcolour, pensize, pencolour):
     """
     TODO: Nastya
     Function is drawing a star.
@@ -78,13 +78,17 @@ def star(x, y, fillcolour, pensize, pencolour):
     t.speed(8)
     t.pensize(pensize)
     t.color(pencolour)
-    for i in range(25):
-        for colours in ['indigo', 'indigo']:
-            t.color(colours)
-            t.fd(2 * i)
-            t.lt(150)
-    t.fd(5)
-    t.setheading(0)
+    size = a
+    angle = 120
+    t.fillcolor(fillcolour)
+    t.begin_fill()
+    for side in range(5):
+        t.fd(size)
+        t.rt(angle)
+        t.fd(size)
+        t.rt(72 - angle)
+
+    t.end_fill()
     t.pu()
 
 
