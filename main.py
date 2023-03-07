@@ -124,13 +124,16 @@ def square(x, y, a, fillcolour, pensize, pencolour):
     :return:
     """
     t.speed(8)
-    t.goto(x, y)
     t.pd()
-    square = t.Turtle()
-    square.shape("turtle")
+    t.fillcolor(fillcolour)
+    t.pencolor(pencolour)
+    t.pensize(pensize)
+    t.begin_fill()
     for i in range(4):
-        square.forward(100)
-        square.right(90)
+        t.forward(100)
+        t.right(90)
+
+    t.end_fill()
     t.pu()
 
 
