@@ -146,7 +146,20 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
     :param pencolour: colour of the contour
     :return:
     """
-    pass
+    t.goto(x, y)
+    t.pd()
+    t.speed(2)
+    t.pensize(pensize)
+    t.fillcolor(fillcolour)
+    t.begin_fill()
+    for i in range(2):
+        t.fd(a)
+        t.lt(90)
+        t.fd(b)
+        t.lt(90)
+    t.end_fill()
+    t.done()
+
 
 
 
