@@ -63,7 +63,7 @@ def triangle(x, y, a, fillcolour, pensize, pencolor):
     t.done()
 
 
-def star(x, y, a, fillcolour, pensize, pencolour):
+def star(x, y, fillcolour, pensize, pencolour):
     """
     TODO: Nastya
     Function is drawing a star.
@@ -75,16 +75,19 @@ def star(x, y, a, fillcolour, pensize, pencolour):
     :param pencolour: colour of the contour
     :return:
     """
+    import turtle as t
+
+    t.goto(x, y)
     t.pd()
     t.speed(0)
-    t.pensize(2)
-    t.color('pink')
-    for i in range(250):
-        for colours in ['red', 'blue']:
+    t.pensize(pensize)
+    t.color(pencolour)
+    for i in range(25):
+        for colours in ['indigo', 'indigo']:
             t.color(colours)
-            t.fd(2*i)
+            t.fd(2 * i)
             t.lt(150)
-    t.fd(500)
+    t.fd(5)
     t.done()
 
 
@@ -115,7 +118,14 @@ def square(x, y, a, fillcolour, pensize, pencolour):
     :param pencolour: colour of the contour
     :return:
     """
-    pass
+    import turtle
+
+    square = turtle.Turtle()
+    square.shape("turtle")
+    for i in range(4):
+        square.forward(100)
+        square.right(90)
+    turtle.exitonclick()
 
 
 def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
