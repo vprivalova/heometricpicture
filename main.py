@@ -19,7 +19,7 @@ def background():
     t.begin_fill()
     t.goto(-500, 400)
     t.pd()
-    t.speed(8)
+    t.speed(15)
     t.fd(1000)
     t.rt(90)
     t.fd(800)
@@ -47,7 +47,7 @@ def triangle(x, y, a, fillcolour, pensize, pencolor):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(8)
+    t.speed(15)
     t.pensize(pensize)
     t.pencolor(pencolor)
     t.fillcolor(fillcolour)
@@ -77,7 +77,7 @@ def star(x, y, a, fillcolour, pensize, pencolour):
 
     t.goto(x, y)
     t.pd()
-    t.speed(8)
+    t.speed(15)
     t.pensize(pensize)
     t.color(pencolour)
     size = a
@@ -108,7 +108,7 @@ def circle(x, y, radius, fillcolour, pensize, pencolour):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(8)
+    t.speed(15)
     t.fillcolor(fillcolour)
     t.pencolor(pencolour)
     t.begin_fill()
@@ -131,7 +131,7 @@ def square(x, y, a, fillcolour, pensize, pencolour):
     :param pencolour: colour of the contour
     :return:
     """
-    t.speed(8)
+    t.speed(15)
     t.goto(x, y)
     t.pd()
     t.fillcolor(fillcolour)
@@ -163,7 +163,7 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(8)
+    t.speed(15)
     t.pensize(pensize)
     t.pencolor(pencolour)
     t.fillcolor(fillcolour)
@@ -193,7 +193,7 @@ def semicircle(x, y, radius, fillcolour, pensize, pencolour):
     t.goto(x, y)
     t.setheading(90)
     t.pd()
-    t.speed(8)
+    t.speed(15)
     t.fillcolor(fillcolour)
     t.pencolor(pencolour)
     t.begin_fill()
@@ -205,42 +205,39 @@ def semicircle(x, y, radius, fillcolour, pensize, pencolour):
 
 
 background()
+rectangle(-500, -400, 1000, 20, "#331f10", 1, '#331f10')
 circle(-420, 290, 50, '#edebe0', 4, '#EEE8AA')
-square(-480, -180, 200, '#EE82EE', 4, '#DA70D6')
-triangle(-480, -180, 200, '#ADD8E6', 4, '#87CEEB')
-square(-430, -230, 100, 'yellow', 2, '#423f30')
+square(-485, -190, 190, '#EE82EE', 4, '#DA70D6')
+triangle(-485, -190, 190, '#ADD8E6', 4, '#87CEEB')
+square(-440, -230, 100, 'yellow', 1, '#423f30')
+rectangle(-440, -280, 100, 1, "#423f30", 1, '#423f30')
+rectangle(-390, -330, 1, 100, "#423f30", 1, '#423f30')
 rectangle(-280, -380, 177, 400, "#FF7F50", 4, '#FF6347')
 semicircle(-65, 20, 130, '#00FA9A', 4, '#66CDAA')
-square(-215, -70, 50, 'yellow', 2, '#423f30')
-square(-215, -170, 50, 'yellow', 2, '#423f30')
-square(-215, -270, 50, 'yellow', 2, '#423f30')
+square(-215, -70, 50, 'yellow', 1, '#423f30')
+square(-215, -170, 50, 'yellow', 1, '#423f30')
+square(-215, -270, 50, 'yellow', 1, '#423f30')
 star(-200, 300, 15, '#f7fc99', 2, '#BDB76B')
 star(-400, 170, 20, '#f2ff00', 2, '#BDB76B')
 
 
-t.goto(-100,-400)
-t.setheading(90)
-t.pd()
-t.pencolor('white')
-t.fd(800)
-t.pu()
+#выше код Вики, ниже код Насти
 
-
-rectangle(50, -380, 300, 100, 'darksalmon', 3, 'darksalmon')
-triangle(-70, -80, 140, 'maroon', 3, 'maroon')
-rectangle(30, -40, 10, 50, 'dimgrey', 3, 'dimgrey')
+rectangle(-90, -380, 150, 300, 'darksalmon', 3, 'darksalmon')
+triangle(-110, -80, 190, 'maroon', 3, 'maroon')
+rectangle(20, -40, 20, 80, 'dimgrey', 1, 'black')
 rectangle(-35, -380, 20, 30, 'brown', 3, 'brown')
-square(-30, -255, 15, 'gold', 3, 'gold')
-square(-30, -205, 15, 'gold', 3, 'gold')
-square(-30, -155, 15, 'gold', 3, 'gold')
-square(-30, -105, 15, 'gold', 3, 'gold')
+square(-60, -255, 15, 'gold', 1, 'gold')
+square(-60, -205, 15, 'gold', 1, 'gold')
+square(-60, -155, 15, 'gold', 1, 'gold')
+square(-60, -105, 15, 'gold', 1, 'gold')
 rectangle(0, -145, 30, 10, 'brown', 3, 'brown')
 square(15, -222, 10, 'gold', 3, 'gold')
 rectangle(0, -195, 30, 10, 'brown', 3, 'brown')
 square(15, -172, 10, 'gold', 3, 'gold')
 rectangle(0, -245, 30, 10, 'brown', 3, 'brown')
 square(15, -122, 10, 'gold', 3, 'gold')
-rectangle(15, -380, 150, 90, 'tan', 3, 'tan')
+rectangle(70, -380, 120, 120, 'tan', 3, 'tan')
 
 #тут область насти
 t.pu()
