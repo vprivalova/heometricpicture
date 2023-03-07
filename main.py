@@ -103,7 +103,14 @@ def circle(x, y, radius, fillcolour, pensize, pencolour):
     :param pencolour: colour of the contour
     :return:
     """
-    pass
+    t.goto(x, y)
+    t.fillcolor(fillcolour)
+    t.pencolor(pencolour)
+    t.begin_fill()
+    t.pensize(pensize)
+    t.circle(radius)
+    t.end_fill()
+    t.done()
 
 
 def square(x, y, a, fillcolour, pensize, pencolour):
