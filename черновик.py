@@ -1,3 +1,28 @@
+import turtle as t
+
+def circle(x, y, radius, fillcolour, pensize, pencolour):
+    """
+    TODO: Vika
+    Function is drawing a circle.
+    :param x: first coordinate of the center of the circle
+    :param y: second coordinate of the center of the circle
+    :param radius: half of diameter of the circle
+    :param fillcolour: circle fill colour
+    :param pensize: contour width
+    :param pencolour: colour of the contour
+    :return:
+    """
+    t.goto(x, y)
+    t.fillcolor(fillcolour)
+    t.pencolor(pencolour)
+    t.begin_fill()
+    t.pensize(pensize)
+    t.circle(radius)
+    t.end_fill()
+    t.done()
+
+circle(0, 0, 70, 'blue', 5, 'red')
+
 """
 Privalova Viktoria
 Khludina Ksenia
@@ -19,7 +44,6 @@ def background():
     t.begin_fill()
     t.goto(-500, 400)
     t.pd()
-    t.speed(8)
     t.fd(1000)
     t.rt(90)
     t.fd(800)
@@ -31,36 +55,30 @@ def background():
     t.pu()
     t.goto(0, 0)
     t.rt(90)
+    t.done()
 
 
-def triangle(x, y, a, fillcolour, pensize, pencolor):
+background()
+
+
+def triangle(x, y, a, c, angle1, fillcolour, pensize, pencolor):
     """
     TODO: Ksenia
     Function is drawing an isosceles triangle. #равнобедренный треугольник
     :param x: first coordinate of the start of drawing triangle
     :param y: last coordinate of the start of drawing triangle
     :param a: lenght of the side of the triangle, other side (b) is equal
+    :param c: length of the base of the triangle
+    :param angle1: an angle between sides a and b. other two angles (angle2, angle3) are same and equal = (180-angle1)/2 #угол между равными сторонами
     :param fillcolour: triangle fill colour #цвет заливки треугольника
     :param pensize: contour width
     :param pencolor: colour of the contour
     :return:
     """
-    t.goto(x, y)
-    t.pd()
-    t.speed(8)
-    t.pensize(pensize)
-    t.fillcolor(fillcolour)
-    t.begin_fill()
-    t.fd(a)
-    t.lt(120)
-    t.fd(a)
-    t.lt(120)
-    t.fd(a)
-    t.end_fill()
-    t.pu()
+    pass
 
 
-def star(x, y, fillcolour, pensize, pencolour):
+def star(x, y, a, fillcolour, pensize, pencolour):
     """
     TODO: Nastya
     Function is drawing a star.
@@ -72,19 +90,17 @@ def star(x, y, fillcolour, pensize, pencolour):
     :param pencolour: colour of the contour
     :return:
     """
-
-    t.goto(x, y)
     t.pd()
-    t.speed(8)
-    t.pensize(pensize)
-    t.color(pencolour)
-    for i in range(25):
-        for colours in ['indigo', 'indigo']:
+    t.speed(0)
+    t.pensize(2)
+    t.color('pink')
+    for i in range(250):
+        for colours in ['red', 'blue']:
             t.color(colours)
-            t.fd(2 * i)
+            t.fd(2*i)
             t.lt(150)
-    t.fd(5)
-    t.pu()
+    t.fd(500)
+    t.done()
 
 
 def circle(x, y, radius, fillcolour, pensize, pencolour):
@@ -99,16 +115,7 @@ def circle(x, y, radius, fillcolour, pensize, pencolour):
     :param pencolour: colour of the contour
     :return:
     """
-    t.goto(x, y)
-    t.pd()
-    t.speed(8)
-    t.fillcolor(fillcolour)
-    t.pencolor(pencolour)
-    t.begin_fill()
-    t.pensize(pensize)
-    t.circle(radius)
-    t.end_fill()
-    t.pu()
+    pass
 
 
 def square(x, y, a, fillcolour, pensize, pencolour):
@@ -123,15 +130,7 @@ def square(x, y, a, fillcolour, pensize, pencolour):
     :param pencolour: colour of the contour
     :return:
     """
-    t.speed(8)
-    t.goto(x, y)
-    t.pd()
-    square = t.Turtle()
-    square.shape("turtle")
-    for i in range(4):
-        square.forward(100)
-        square.right(90)
-    t.pu()
+    pass
 
 
 def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
@@ -147,23 +146,8 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
     :param pencolour: colour of the contour
     :return:
     """
-    t.goto(x, y)
-    t.pd()
-    t.speed(2)
-    t.pensize(pensize)
-    t.fillcolor(fillcolour)
-    t.begin_fill()
-    for i in range(2):
-        t.fd(a)
-        t.lt(90)
-        t.fd(b)
-        t.lt(90)
-    t.end_fill()
-    t.done()
+    pass
 
 
-background()
-triangle(0, 0, 40, 'yellow', 3, 'blue')
-circle(-10, 0, 10, 'red', 3, 'green')
-square(-20, 0, 10, 'yellow', 3, 'blue')
-star(40, 40, 'black', 3, 'yellow')
+
+
