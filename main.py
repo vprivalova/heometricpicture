@@ -47,7 +47,7 @@ def triangle(x, y, a, fillcolour, pensize, pencolor):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(5)
+    t.speed(8)
     t.pensize(pensize)
     t.pencolor(pencolor)
     t.fillcolor(fillcolour)
@@ -108,12 +108,38 @@ def circle(x, y, radius, fillcolour, pensize, pencolour):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(5)
+    t.speed(8)
     t.fillcolor(fillcolour)
     t.pencolor(pencolour)
     t.begin_fill()
     t.pensize(pensize)
     t.circle(radius)
+    t.end_fill()
+    t.setheading(0)
+    t.pu()
+
+
+def semicircle(x, y, radius, fillcolour, pensize, pencolour):
+    """
+    TODO: Vika
+    Function is drawing a circle.
+    :param x: first coordinate of the center of the circle
+    :param y: second coordinate of the center of the circle
+    :param radius: half of diameter of the circle
+    :param fillcolour: circle fill colour
+    :param pensize: contour width
+    :param pencolour: colour of the contour
+    :return:
+    """
+    t.goto(x, y)
+    t.setheading(90)
+    t.pd()
+    t.speed(8)
+    t.fillcolor(fillcolour)
+    t.pencolor(pencolour)
+    t.begin_fill()
+    t.pensize(pensize)
+    t.circle(radius, 180)
     t.end_fill()
     t.setheading(0)
     t.pu()
@@ -163,7 +189,7 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(5)
+    t.speed(8)
     t.pensize(pensize)
     t.pencolor(pencolour)
     t.fillcolor(fillcolour)
@@ -174,15 +200,22 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
         t.fd(b)
         t.lt(90)
     t.end_fill()
+    t.pu()
     t.setheading(0)
 
 
 background()
-circle(-420, 295, 50, '#FAFAD2', 2, '#EEE8AA')
-square(-480, -200, 200, '#EE82EE', 2, '#DA70D6')
-triangle(-480, -200, 200, '#ADD8E6', 2, '#87CEEB')
-square(-405, -300, 50, 'yellow', 3, 'yellow')
-rectangle(-280, -400, 177, 400, "#FF7F50", 2, '#FF6347')
+circle(-420, 295, 50, '#edebe0', 4, '#EEE8AA')
+square(-480, -200, 200, '#EE82EE', 4, '#DA70D6')
+triangle(-480, -200, 200, '#ADD8E6', 4, '#87CEEB')
+square(-430, -250, 100, 'yellow', 2, '#423f30')
+rectangle(-280, -400, 177, 400, "#FF7F50", 4, '#FF6347')
+semicircle(-103, 0, 88.5, '#00FA9A', 4, '#66CDAA')
+square(-215, -70, 50, 'yellow', 2, '#423f30')
+square(-215, -170, 50, 'yellow', 2, '#423f30')
+square(-215, -270, 50, 'yellow', 2, '#423f30')
+star(-200, 300, 20, '#f7fc99', 2, '#BDB76B')
+star(-400, 170, 20, '#f2ff00', 2, '#BDB76B')
 
 
 t.goto(-100,-400)
@@ -208,6 +241,7 @@ t.mainloop()
 
 # triangle(0, 0, 40, 'yellow', 3, 'blue')
 # circle(50, 50, 20, 'red', 3, 'green')
+# semicircle(50, 50, 20, 'red', 3, 'green')
 # square(-200, 90, 50, 'yellow', 3, 'blue')
 # star(40, 40, 'black', 3, 'yellow')
 # rectangle(-60, 60, 70, 30, "green", 3, 'black')
