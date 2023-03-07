@@ -49,6 +49,7 @@ def triangle(x, y, a, fillcolour, pensize, pencolor):
     t.pd()
     t.speed(2)
     t.pensize(pensize)
+    t.pencolor(pencolor)
     t.fillcolor(fillcolour)
     t.begin_fill()
     t.fd(a)
@@ -58,6 +59,7 @@ def triangle(x, y, a, fillcolour, pensize, pencolor):
     t.fd(a)
     t.end_fill()
     t.pu()
+    t.setheading(0)
 
 
 def star(x, y, a, fillcolour, pensize, pencolour):
@@ -137,11 +139,13 @@ def square(x, y, a, fillcolour, pensize, pencolour):
     t.pensize(pensize)
     t.begin_fill()
     for i in range(4):
-        t.forward(100)
+        t.forward(a)
         t.right(90)
 
     t.end_fill()
     t.pu()
+    t.setheading(0)
+
 
 
 def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
@@ -173,8 +177,18 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
 
 
 background()
-triangle(0, 0, 40, 'yellow', 3, 'blue')
-circle(50, 50, 20, 'red', 3, 'green')
-square(-200, 90, 50, 'yellow', 3, 'blue')
-star(40, 40, 'black', 3, 'yellow')
-rectangle(-60, 60, 70, 30, "green", 3, 'black')
+circle(-450, 350, 20, 'yellow', 3, 'yellow')
+square(-480, -200, 200, '#EE82EE', 2, '#DA70D6')
+triangle(-480, -200, 200, '#ADD8E6', 2, '#87CEEB')
+square(-405, -300, 50, 'yellow', 3, 'yellow')
+t.mainloop()
+
+
+
+
+
+# triangle(0, 0, 40, 'yellow', 3, 'blue')
+# circle(50, 50, 20, 'red', 3, 'green')
+# square(-200, 90, 50, 'yellow', 3, 'blue')
+# star(40, 40, 'black', 3, 'yellow')
+# rectangle(-60, 60, 70, 30, "green", 3, 'black')
