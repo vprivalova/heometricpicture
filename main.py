@@ -126,11 +126,10 @@ def square(x, y, a, fillcolour, pensize, pencolour):
     """
 
     square = t.Turtle()
-    square.shape("turtle")
     for i in range(4):
         square.forward(100)
         square.right(90)
-    turtle.exitonclick()
+    t.exitonclick()
 
 
 def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
