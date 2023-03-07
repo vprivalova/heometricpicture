@@ -47,7 +47,7 @@ def triangle(x, y, a, fillcolour, pensize, pencolor):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(2)
+    t.speed(5)
     t.pensize(pensize)
     t.pencolor(pencolor)
     t.fillcolor(fillcolour)
@@ -108,7 +108,7 @@ def circle(x, y, radius, fillcolour, pensize, pencolour):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(2)
+    t.speed(5)
     t.fillcolor(fillcolour)
     t.pencolor(pencolour)
     t.begin_fill()
@@ -154,8 +154,8 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
     Function is drawing a rectangle.
     :param x: first coordinate of the start of drawing rectangle
     :param y: second coordinate of the start of drawing rectangle
-    :param a: length of the longer side
-    :param b: length of the shorter side
+    :param a: length of the shorter side
+    :param b: length of the longer side
     :param fillcolour: rectangle fill colour
     :param pensize: contour width
     :param pencolour: colour of the contour
@@ -163,8 +163,9 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(2)
+    t.speed(5)
     t.pensize(pensize)
+    t.pencolor(pencolour)
     t.fillcolor(fillcolour)
     t.begin_fill()
     for i in range(2):
@@ -177,10 +178,11 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
 
 
 background()
-circle(-450, 350, 20, 'yellow', 3, 'yellow')
+circle(-420, 295, 50, '#FAFAD2', 2, '#EEE8AA')
 square(-480, -200, 200, '#EE82EE', 2, '#DA70D6')
 triangle(-480, -200, 200, '#ADD8E6', 2, '#87CEEB')
 square(-405, -300, 50, 'yellow', 3, 'yellow')
+rectangle(-280, -400, 177, 400, "#FF7F50", 2, '#FF6347')
 
 
 t.goto(-100,-400)
@@ -188,6 +190,7 @@ t.setheading(90)
 t.pd()
 t.pencolor('white')
 t.fd(800)
+
 #тут область насти
 t.pu()
 t.goto(200,-400)
