@@ -47,7 +47,7 @@ def triangle(x, y, a, fillcolour, pensize, pencolor):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(5)
+    t.speed(8)
     t.pensize(pensize)
     t.pencolor(pencolor)
     t.fillcolor(fillcolour)
@@ -108,7 +108,7 @@ def circle(x, y, radius, fillcolour, pensize, pencolour):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(5)
+    t.speed(8)
     t.fillcolor(fillcolour)
     t.pencolor(pencolour)
     t.begin_fill()
@@ -163,7 +163,7 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(5)
+    t.speed(8)
     t.pensize(pensize)
     t.pencolor(pencolour)
     t.fillcolor(fillcolour)
@@ -214,7 +214,7 @@ semicircle(-65, 20, 130, '#00FA9A', 4, '#66CDAA')
 square(-215, -70, 50, 'yellow', 2, '#423f30')
 square(-215, -170, 50, 'yellow', 2, '#423f30')
 square(-215, -270, 50, 'yellow', 2, '#423f30')
-star(-200, 300, 20, '#f7fc99', 2, '#BDB76B')
+star(-200, 300, 15, '#f7fc99', 2, '#BDB76B')
 star(-400, 170, 20, '#f2ff00', 2, '#BDB76B')
 
 
@@ -226,21 +226,21 @@ t.fd(800)
 t.pu()
 
 
-rectangle(50, -300, 300, 100, 'darksalmon', 3, 'darksalmon')
-triangle(-70, 0, 140, 'maroon', 3, 'maroon')
-rectangle(30, 40, 10, 50, 'dimgrey', 3, 'dimgrey')
-rectangle(-35, -300, 20, 30, 'brown', 3, 'brown')
-square(-30, -175, 15, 'gold', 3, 'gold')
-square(-30, -125, 15, 'gold', 3, 'gold')
-square(-30, -75, 15, 'gold', 3, 'gold')
-square(-30, -25, 15, 'gold', 3, 'gold')
-rectangle(0, -165, 30, 10, 'brown', 3, 'brown')
-square(15, -142, 10, 'gold', 3, 'gold')
-rectangle(0, -115, 30, 10, 'brown', 3, 'brown')
-square(15, -92, 10, 'gold', 3, 'gold')
-rectangle(0, -65, 30, 10, 'brown', 3, 'brown')
-square(15, -42, 10, 'gold', 3, 'gold')
-rectangle(15, -350, 150, 90, 'tan', 3, 'tan')
+rectangle(50, -380, 300, 100, 'darksalmon', 3, 'darksalmon')
+triangle(-70, -80, 140, 'maroon', 3, 'maroon')
+rectangle(30, -40, 10, 50, 'dimgrey', 3, 'dimgrey')
+rectangle(-35, -380, 20, 30, 'brown', 3, 'brown')
+square(-30, -255, 15, 'gold', 3, 'gold')
+square(-30, -205, 15, 'gold', 3, 'gold')
+square(-30, -155, 15, 'gold', 3, 'gold')
+square(-30, -105, 15, 'gold', 3, 'gold')
+rectangle(0, -145, 30, 10, 'brown', 3, 'brown')
+square(15, -222, 10, 'gold', 3, 'gold')
+rectangle(0, -195, 30, 10, 'brown', 3, 'brown')
+square(15, -172, 10, 'gold', 3, 'gold')
+rectangle(0, -245, 30, 10, 'brown', 3, 'brown')
+square(15, -122, 10, 'gold', 3, 'gold')
+rectangle(15, -380, 150, 90, 'tan', 3, 'tan')
 
 #тут область насти
 t.pu()
@@ -254,11 +254,3 @@ t.pu()
 t.mainloop()
 
 
-
-
-
-# triangle(0, 0, 40, 'yellow', 3, 'blue')
-# circle(50, 50, 20, 'red', 3, 'green')
-# square(-200, 90, 50, 'yellow', 3, 'blue')
-# star(40, 40, 'black', 3, 'yellow')
-# rectangle(-60, 60, 70, 30, "green", 3, 'black')
