@@ -178,12 +178,44 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
     t.pu()
 
 
+def semicircle(x, y, radius, fillcolour, pensize, pencolour):
+    """
+    TODO: Vika
+    Function is drawing a circle.
+    :param x: first coordinate of the center of the circle
+    :param y: second coordinate of the center of the circle
+    :param radius: half of diameter of the circle
+    :param fillcolour: circle fill colour
+    :param pensize: contour width
+    :param pencolour: colour of the contour
+    :return:
+    """
+    t.goto(x, y)
+    t.setheading(90)
+    t.pd()
+    t.speed(8)
+    t.fillcolor(fillcolour)
+    t.pencolor(pencolour)
+    t.begin_fill()
+    t.pensize(pensize)
+    t.circle(radius, 180)
+    t.end_fill()
+    t.setheading(0)
+    t.pu()
+
+
 background()
-circle(-420, 295, 50, '#FAFAD2', 2, '#EEE8AA')
-square(-480, -200, 200, '#EE82EE', 2, '#DA70D6')
-triangle(-480, -200, 200, '#ADD8E6', 2, '#87CEEB')
-square(-405, -300, 50, 'yellow', 3, 'yellow')
-rectangle(-280, -400, 177, 400, "#FF7F50", 2, '#FF6347')
+circle(-420, 290, 50, '#edebe0', 4, '#EEE8AA')
+square(-480, -180, 200, '#EE82EE', 4, '#DA70D6')
+triangle(-480, -180, 200, '#ADD8E6', 4, '#87CEEB')
+square(-430, -230, 100, 'yellow', 2, '#423f30')
+rectangle(-280, -380, 177, 400, "#FF7F50", 4, '#FF6347')
+semicircle(-103, 20, 88.5, '#00FA9A', 4, '#66CDAA')
+square(-215, -70, 50, 'yellow', 2, '#423f30')
+square(-215, -170, 50, 'yellow', 2, '#423f30')
+square(-215, -270, 50, 'yellow', 2, '#423f30')
+star(-200, 300, 20, '#f7fc99', 2, '#BDB76B')
+star(-400, 170, 20, '#f2ff00', 2, '#BDB76B')
 
 
 t.goto(-100,-400)
