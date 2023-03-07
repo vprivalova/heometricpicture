@@ -177,6 +177,12 @@ circle(-450, 350, 20, 'yellow', 3, 'yellow')
 square(-480, -200, 200, '#EE82EE', 2, '#DA70D6')
 triangle(-480, -200, 200, '#ADD8E6', 2, '#87CEEB')
 square(-405, -300, 50, 'yellow', 3, 'yellow')
+t.goto(-100,-400)
+t.setheading(90)
+t.pd()
+t.pencolor('white')
+t.fd(800)
+#тут область насти
 t.mainloop()
 
 
