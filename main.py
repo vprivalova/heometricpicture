@@ -19,6 +19,7 @@ def background():
     t.begin_fill()
     t.goto(-500, 400)
     t.pd()
+    t.speed(8)
     t.fd(1000)
     t.rt(90)
     t.fd(800)
@@ -30,10 +31,6 @@ def background():
     t.pu()
     t.goto(0, 0)
     t.rt(90)
-    t.done()
-
-
-background()
 
 
 def triangle(x, y, a, fillcolour, pensize, pencolor):
@@ -50,7 +47,7 @@ def triangle(x, y, a, fillcolour, pensize, pencolor):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(2)
+    t.speed(8)
     t.pensize(pensize)
     t.fillcolor(fillcolour)
     t.begin_fill()
@@ -60,7 +57,7 @@ def triangle(x, y, a, fillcolour, pensize, pencolor):
     t.lt(120)
     t.fd(a)
     t.end_fill()
-    t.done()
+    t.pu()
 
 
 def star(x, y, fillcolour, pensize, pencolour):
@@ -78,7 +75,7 @@ def star(x, y, fillcolour, pensize, pencolour):
 
     t.goto(x, y)
     t.pd()
-    t.speed(0)
+    t.speed(8)
     t.pensize(pensize)
     t.color(pencolour)
     for i in range(25):
@@ -87,7 +84,7 @@ def star(x, y, fillcolour, pensize, pencolour):
             t.fd(2 * i)
             t.lt(150)
     t.fd(5)
-    t.done()
+    t.pu()
 
 
 def circle(x, y, radius, fillcolour, pensize, pencolour):
@@ -103,13 +100,15 @@ def circle(x, y, radius, fillcolour, pensize, pencolour):
     :return:
     """
     t.goto(x, y)
+    t.pd()
+    t.speed(8)
     t.fillcolor(fillcolour)
     t.pencolor(pencolour)
     t.begin_fill()
     t.pensize(pensize)
     t.circle(radius)
     t.end_fill()
-    t.done()
+    t.pu()
 
 
 def square(x, y, a, fillcolour, pensize, pencolour):
@@ -124,13 +123,15 @@ def square(x, y, a, fillcolour, pensize, pencolour):
     :param pencolour: colour of the contour
     :return:
     """
-
+    t.speed(8)
+    t.goto(x, y)
+    t.pd()
     square = t.Turtle()
     square.shape("turtle")
     for i in range(4):
         square.forward(100)
         square.right(90)
-    turtle.exitonclick()
+    t.pu()
 
 
 def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
@@ -148,6 +149,8 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
     """
     pass
 
-
-
-
+background()
+triangle(0, 0, 40, 'yellow', 3, 'blue')
+circle(-10, 0, 10, 'red', 3, 'green')
+square(-20, 0, 10, 'yellow', 3, 'blue')
+star(40, 40, 'black', 3, 'yellow')
