@@ -73,7 +73,6 @@ def star(x, y, a, fillcolour, pensize, pencolour):
     :param pencolour: colour of the contour
     :return:
     """
-
     t.goto(x, y)
     t.pd()
     t.speed(1000)
