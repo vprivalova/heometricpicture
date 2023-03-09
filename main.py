@@ -87,7 +87,6 @@ def star(x, y, a, fillcolour, pensize, pencolour):
         t.rt(angle)
         t.fd(size)
         t.rt(72 - angle)
-
     t.end_fill()
     t.pu()
 
@@ -139,7 +138,6 @@ def square(x, y, a, fillcolour, pensize, pencolour):
     for i in range(4):
         t.forward(a)
         t.right(90)
-
     t.end_fill()
     t.pu()
     t.setheading(0)
@@ -275,5 +273,3 @@ star(270, 350, 15, 'oldlace', 3, 'beige')
 star(400, 250, 10, '#f7fc99', 3, '#BDB76B')
 
 t.mainloop()
-
-
