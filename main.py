@@ -19,7 +19,7 @@ def background():
     t.begin_fill()
     t.goto(-500, 400)
     t.pd()
-    t.speed(15)
+    t.speed(1000)
     t.fd(1000)
     t.rt(90)
     t.fd(800)
@@ -47,7 +47,7 @@ def triangle(x, y, a, fillcolour, pensize, pencolor):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(15)
+    t.speed(1000)
     t.pensize(pensize)
     t.pencolor(pencolor)
     t.fillcolor(fillcolour)
@@ -77,7 +77,7 @@ def star(x, y, a, fillcolour, pensize, pencolour):
 
     t.goto(x, y)
     t.pd()
-    t.speed(15)
+    t.speed(1000)
     t.pensize(pensize)
     t.color(pencolour)
     size = a
@@ -108,7 +108,7 @@ def circle(x, y, radius, fillcolour, pensize, pencolour):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(15)
+    t.speed(1000)
     t.fillcolor(fillcolour)
     t.pencolor(pencolour)
     t.begin_fill()
@@ -131,7 +131,7 @@ def square(x, y, a, fillcolour, pensize, pencolour):
     :param pencolour: colour of the contour
     :return:
     """
-    t.speed(15)
+    t.speed(1000)
     t.goto(x, y)
     t.pd()
     t.fillcolor(fillcolour)
@@ -163,7 +163,7 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
     """
     t.goto(x, y)
     t.pd()
-    t.speed(15)
+    t.speed(1000)
     t.pensize(pensize)
     t.pencolor(pencolour)
     t.fillcolor(fillcolour)
@@ -193,7 +193,7 @@ def semicircle(x, y, radius, fillcolour, pensize, pencolour):
     t.goto(x, y)
     t.setheading(90)
     t.pd()
-    t.speed(15)
+    t.speed(1000)
     t.fillcolor(fillcolour)
     t.pencolor(pencolour)
     t.begin_fill()
@@ -235,7 +235,6 @@ star(-400, 210, 20, '#f2ff00', 2, '#BDB76B')
 
 #выше это строки часть вики, ниже часть насти
 
-
 rectangle(-50, -300, 100, 300, 'darksalmon', 3, 'darksalmon')
 triangle(-70, 0, 140, 'maroon', 3, 'maroon')
 rectangle(30, 40, 10, 50, 'dimgrey', 3, 'dimgrey')
@@ -262,7 +261,6 @@ star(-50, 200, 25, 'lightyellow', 3, 'beige')
 star(0, 350, 15, 'oldlace', 3, 'beige')
 star(150, 250, 10, '#f7fc99', 3, '#BDB76B')
 
-
 #выше этой строки часть насти, ниже часть ксюши
 
 t.pu()
@@ -273,6 +271,23 @@ t.pencolor('white')
 t.fd(800)
 t.pu()
 t.rt(90)
+
+
+rectangle(200, -340, 200, 400, '#DEB887', 3, '#DEB887')
+triangle(182, 50, 240, '#A0522D', 1, '#A0522D')
+square(345, -225, 30, 'gold', 3, '#8B4513')
+square(295, -175, 30, 'gold', 3, '#8B4513')
+square(245, -125, 30, 'gold', 3, '#8B4513')
+square(325, -25, 30, 'gold', 3, '#8B4513')
+square(275, 25, 30, 'gold', 3, '#8B4513')
+rectangle(220, -340, 25, 70, '#8B4513', 3, '#8B4513')
+rectangle(340, -350, 150, 250, '#87CEEB', 3, '#87CEEB')
+semicircle(495, -100, 80, '#4169E1', 3, '#4169E1')
+rectangle(350, -350, 30, 60, '#4169E1', 3, '#4169E1')
+square(393, -225, 50, 'gold', 3, '#4169E1')
+square(393, -160, 50, 'gold', 3, '#4169E1')
+star(270, 350, 15, 'oldlace', 3, 'beige')
+star(400, 250, 10, '#f7fc99', 3, '#BDB76B')
 
 #тут область ксюши
 
