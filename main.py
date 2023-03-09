@@ -2,7 +2,6 @@
 Privalova Viktoria
 Khludina Ksenia
 Nizovtseva Anastasia
-
 """
 
 import turtle as t
@@ -147,7 +146,6 @@ def square(x, y, a, fillcolour, pensize, pencolour):
     t.setheading(0)
 
 
-
 def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
     """
     TODO: Ksenia
@@ -233,7 +231,6 @@ square(-165, -240, 20, 'gold', 2, 'gold')
 star(-200, 300, 15, '#f7fc99', 2, '#BDB76B')
 star(-400, 210, 20, '#f2ff00', 2, '#BDB76B')
 
-#выше это строки часть вики, ниже часть насти
 
 rectangle(-50, -300, 100, 300, 'darksalmon', 3, 'darksalmon')
 triangle(-70, 0, 140, 'maroon', 3, 'maroon')
@@ -261,17 +258,6 @@ star(-50, 200, 25, 'lightyellow', 3, 'beige')
 star(0, 350, 15, 'oldlace', 3, 'beige')
 star(150, 250, 10, '#f7fc99', 3, '#BDB76B')
 
-#выше этой строки часть насти, ниже часть ксюши
-
-t.pu()
-t.goto(200,-400)
-t.setheading(90)
-t.pd()
-t.pencolor('white')
-t.fd(800)
-t.pu()
-t.rt(90)
-
 
 rectangle(200, -340, 200, 400, '#DEB887', 3, '#DEB887')
 triangle(182, 50, 240, '#A0522D', 1, '#A0522D')
@@ -289,8 +275,6 @@ square(393, -160, 50, 'gold', 3, '#4169E1')
 star(270, 350, 15, 'oldlace', 3, 'beige')
 star(400, 250, 10, '#f7fc99', 3, '#BDB76B')
 
-#тут область ксюши
-
-t.mainloop() #это никогда не удалять
+t.mainloop()
 
 
