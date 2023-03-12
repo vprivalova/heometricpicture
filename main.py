@@ -1,7 +1,7 @@
 """
 Privalova Viktoria
 Khludina Ksenia
-Nizovtseva Anastasia
+Nizovtseva Anastasia 79
 """
 
 import turtle as t
@@ -136,8 +136,8 @@ def square(x, y, a, fillcolour, pensize, pencolour):
     t.pensize(pensize)
     t.begin_fill()
     for i in range(4):
-        t.forward(a)
-        t.right(90)
+        t.fd(a)
+        t.rt(90)
     t.end_fill()
     t.pu()
     t.setheading(0)
