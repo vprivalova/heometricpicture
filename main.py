@@ -1,7 +1,7 @@
 """
 Privalova Viktoria 90
 Khludina Ksenia 90
-Nizovtseva Anastasia 79
+Nizovtseva Anastasia 90
 """
 
 import turtle as t
