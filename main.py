@@ -1,6 +1,6 @@
 """
-Privalova Viktoria
-Khludina Ksenia
+Privalova Viktoria 90
+Khludina Ksenia 90
 Nizovtseva Anastasia 79
 """
 
@@ -11,7 +11,7 @@ def background():
     """
     TODO: Vika
     Function is limiting background and colouring it.
-    :return:
+    :return: None
     """
     t.pu()
     t.fillcolor('#191970')
@@ -32,24 +32,24 @@ def background():
     t.rt(90)
 
 
-def triangle(x, y, a, fillcolour, pensize, pencolor):
+def triangle(x, y, a, fillcolor, pensize, pencolor):
     """
     TODO: Ksenia
-    Function is drawing an isosceles triangle. #равнобедренный треугольник
+    Function is drawing an equilateral triangle.
     :param x: first coordinate of the start of drawing triangle
     :param y: last coordinate of the start of drawing triangle
-    :param a: lenght of the side of the triangle, other side (b) is equal
-    :param fillcolour: triangle fill colour #цвет заливки треугольника
+    :param a: length of the triangle side
+    :param fillcolor: triangle filling colour
     :param pensize: contour width
     :param pencolor: colour of the contour
-    :return:
+    :return: None
     """
     t.goto(x, y)
     t.pd()
     t.speed(1000)
     t.pensize(pensize)
     t.pencolor(pencolor)
-    t.fillcolor(fillcolour)
+    t.fillcolor(fillcolor)
     t.begin_fill()
     t.fd(a)
     t.lt(120)
@@ -61,26 +61,26 @@ def triangle(x, y, a, fillcolour, pensize, pencolor):
     t.setheading(0)
 
 
-def star(x, y, a, fillcolour, pensize, pencolour):
+def star(x, y, a, fillcolor, pensize, pencolor):
     """
     TODO: Nastya
     Function is drawing a star.
     :param x: first coordinate of the start of drawing star
     :param y: second coordinate of the start of drawing star
     :param a: length of the side of star
-    :param fillcolour: star fill colour
+    :param fillcolor: star filling colour
     :param pensize: contour width
-    :param pencolour: colour of the contour
-    :return:
+    :param pencolor: colour of the contour
+    :return: None
     """
     t.goto(x, y)
     t.pd()
     t.speed(1000)
     t.pensize(pensize)
-    t.color(pencolour)
+    t.color(pencolor)
     size = a
     angle = 120
-    t.fillcolor(fillcolour)
+    t.fillcolor(fillcolor)
     t.begin_fill()
     for side in range(5):
         t.fd(size)
@@ -91,23 +91,23 @@ def star(x, y, a, fillcolour, pensize, pencolour):
     t.pu()
 
 
-def circle(x, y, radius, fillcolour, pensize, pencolour):
+def circle(x, y, radius, fillcolor, pensize, pencolor):
     """
     TODO: Vika
     Function is drawing a circle.
     :param x: first coordinate of the center of the circle
     :param y: second coordinate of the center of the circle
     :param radius: half of diameter of the circle
-    :param fillcolour: circle fill colour
+    :param fillcolor: circle fill colour
     :param pensize: contour width
-    :param pencolour: colour of the contour
-    :return:
+    :param pencolor: colour of the contour
+    :return: None
     """
     t.goto(x, y)
     t.pd()
     t.speed(1000)
-    t.fillcolor(fillcolour)
-    t.pencolor(pencolour)
+    t.fillcolor(fillcolor)
+    t.pencolor(pencolor)
     t.begin_fill()
     t.pensize(pensize)
     t.circle(radius)
@@ -116,23 +116,23 @@ def circle(x, y, radius, fillcolour, pensize, pencolour):
     t.pu()
 
 
-def square(x, y, a, fillcolour, pensize, pencolour):
+def square(x, y, a, fillcolor, pensize, pencolor):
     """
     TODO: Nastya
     Function is drawing a square.
     :param x: first coordinate of the start of drawing square
     :param y: second coordinate of the start of drawing square
     :param a: length of the side of the square
-    :param fillcolour: square fill colour
+    :param fillcolor: square fill colour
     :param pensize: contour width
-    :param pencolour: colour of the contour
-    :return:
+    :param pencolor: colour of the contour
+    :return: None
     """
     t.speed(1000)
     t.goto(x, y)
     t.pd()
-    t.fillcolor(fillcolour)
-    t.pencolor(pencolour)
+    t.fillcolor(fillcolor)
+    t.pencolor(pencolor)
     t.pensize(pensize)
     t.begin_fill()
     for i in range(4):
@@ -143,7 +143,7 @@ def square(x, y, a, fillcolour, pensize, pencolour):
     t.setheading(0)
 
 
-def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
+def rectangle(x, y, a, b, fillcolor, pensize, pencolor):
     """
     TODO: Ksenia
     Function is drawing a rectangle.
@@ -151,17 +151,17 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
     :param y: second coordinate of the start of drawing rectangle
     :param a: length of the shorter side
     :param b: length of the longer side
-    :param fillcolour: rectangle fill colour
+    :param fillcolor: rectangle fill colour
     :param pensize: contour width
-    :param pencolour: colour of the contour
-    :return:
+    :param pencolor: colour of the contour
+    :return: None
     """
     t.goto(x, y)
     t.pd()
     t.speed(1000)
     t.pensize(pensize)
-    t.pencolor(pencolour)
-    t.fillcolor(fillcolour)
+    t.pencolor(pencolor)
+    t.fillcolor(fillcolor)
     t.begin_fill()
     for i in range(2):
         t.fd(a)
@@ -173,24 +173,24 @@ def rectangle(x, y, a, b, fillcolour, pensize, pencolour):
     t.pu()
 
 
-def semicircle(x, y, radius, fillcolour, pensize, pencolour):
+def semicircle(x, y, radius, fillcolor, pensize, pencolor):
     """
     TODO: Vika
     Function is drawing a circle.
     :param x: first coordinate of the center of the circle
     :param y: second coordinate of the center of the circle
     :param radius: half of diameter of the circle
-    :param fillcolour: circle fill colour
+    :param fillcolor: circle fill colour
     :param pensize: contour width
-    :param pencolour: colour of the contour
-    :return:
+    :param pencolor: colour of the contour
+    :return: None
     """
     t.goto(x, y)
     t.setheading(90)
     t.pd()
     t.speed(1000)
-    t.fillcolor(fillcolour)
-    t.pencolor(pencolour)
+    t.fillcolor(fillcolor)
+    t.pencolor(pencolor)
     t.begin_fill()
     t.pensize(pensize)
     t.circle(radius, 180)
@@ -228,7 +228,6 @@ square(-165, -240, 20, 'gold', 2, 'gold')
 star(-200, 300, 15, '#f7fc99', 2, '#BDB76B')
 star(-400, 210, 20, '#f2ff00', 2, '#BDB76B')
 
-
 rectangle(-50, -300, 100, 300, 'darksalmon', 3, 'darksalmon')
 triangle(-70, 0, 140, 'maroon', 3, 'maroon')
 rectangle(30, 40, 10, 50, 'dimgrey', 3, 'dimgrey')
@@ -254,7 +253,6 @@ rectangle(75, -280, 30, 10, 'gold', 3, 'gold')
 star(-50, 200, 25, 'lightyellow', 3, 'beige')
 star(0, 350, 15, 'oldlace', 3, 'beige')
 star(150, 250, 10, '#f7fc99', 3, '#BDB76B')
-
 
 rectangle(200, -340, 200, 400, '#DEB887', 3, '#DEB887')
 triangle(182, 50, 240, '#A0522D', 1, '#A0522D')
